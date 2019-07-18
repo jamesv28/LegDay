@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 class WorkoutVC: UIViewController {
 
@@ -17,8 +18,17 @@ class WorkoutVC: UIViewController {
         super.viewDidLoad()
         typeLabel.isHidden = true
         timeLabel.isHidden = true
-        
+        INPreferences.requestSiriAuthorization { (status) in
+            if status == INSiriAuthorizationStatus.authorized {
+                print("Well i'll be")
+            }
+            else {
+                print("something went wrong")
+            }
+        }
     }
+    
+    
 
 
 }

@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA5D757922E11AD9007A5F1C /* LegDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LegDay.entitlements; sourceTree = "<group>"; };
 		AAAD7A4122E01C5F00406E04 /* LegDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAD7A4422E01C5F00406E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAD7A4622E01C5F00406E04 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		AAAD7A4322E01C5F00406E04 /* LegDay */ = {
 			isa = PBXGroup;
 			children = (
+				AA5D757922E11AD9007A5F1C /* LegDay.entitlements */,
 				AAAD7A4422E01C5F00406E04 /* AppDelegate.swift */,
 				AAAD7A4622E01C5F00406E04 /* WorkoutVC.swift */,
 				AAAD7A4822E01C5F00406E04 /* Main.storyboard */,
@@ -99,6 +101,11 @@
 				TargetAttributes = {
 					AAAD7A4022E01C5F00406E04 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -286,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LegDay/LegDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T3M3F8D2N;
 				INFOPLIST_FILE = LegDay/Info.plist;
@@ -304,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LegDay/LegDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T3M3F8D2N;
 				INFOPLIST_FILE = LegDay/Info.plist;
