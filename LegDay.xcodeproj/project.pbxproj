@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA59A33522E242C60023ECFC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59A33422E242C60023ECFC /* DataService.swift */; };
 		AA7E0AB422E1210E00428230 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0AB322E1210E00428230 /* IntentHandler.swift */; };
 		AA7E0AB822E1210E00428230 /* IntentsHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA7E0AB122E1210E00428230 /* IntentsHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AAAD7A4522E01C5F00406E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD7A4422E01C5F00406E04 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA59A33422E242C60023ECFC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AA5D757922E11AD9007A5F1C /* LegDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LegDay.entitlements; sourceTree = "<group>"; };
 		AA7E0AB122E1210E00428230 /* IntentsHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7E0AB322E1210E00428230 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -74,6 +76,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA59A33022E242000023ECFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA59A33122E242090023ECFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA59A33222E242110023ECFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA59A33322E242AB0023ECFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA59A33422E242C60023ECFC /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AA7E0AB222E1210E00428230 /* IntentsHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +135,13 @@
 		AAAD7A4322E01C5F00406E04 /* LegDay */ = {
 			isa = PBXGroup;
 			children = (
+				AA59A33322E242AB0023ECFC /* Services */,
+				AA59A33222E242110023ECFC /* Extensions */,
+				AA59A33122E242090023ECFC /* Model */,
+				AA59A33022E242000023ECFC /* View */,
+				AABF361E22E241B000835AFC /* Controller */,
 				AA5D757922E11AD9007A5F1C /* LegDay.entitlements */,
 				AAAD7A4422E01C5F00406E04 /* AppDelegate.swift */,
-				AAAD7A4622E01C5F00406E04 /* WorkoutVC.swift */,
 				AAAD7A4822E01C5F00406E04 /* Main.storyboard */,
 				AAAD7A4E22E01C7600406E04 /* Assets.xcassets */,
 				AAAD7A5022E01C7600406E04 /* LaunchScreen.storyboard */,
@@ -114,6 +149,14 @@
 				AAAD7A4B22E01C6000406E04 /* LegDay.xcdatamodeld */,
 			);
 			path = LegDay;
+			sourceTree = "<group>";
+		};
+		AABF361E22E241B000835AFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD7A4622E01C5F00406E04 /* WorkoutVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +276,7 @@
 				AAAD7A4D22E01C6000406E04 /* LegDay.xcdatamodeld in Sources */,
 				AAAD7A4722E01C5F00406E04 /* WorkoutVC.swift in Sources */,
 				AAAD7A4522E01C5F00406E04 /* AppDelegate.swift in Sources */,
+				AA59A33522E242C60023ECFC /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
